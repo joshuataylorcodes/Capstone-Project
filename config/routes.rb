@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get "/songs/:id" => "songs#show"
 
-  post "/songs" => "song#create"
+  post "/songs" => "songs#create"
 
-  patch "songs/:id" => "song#update"
+  patch "songs/:id" => "songs#update"
 end

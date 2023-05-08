@@ -1,1 +1,1 @@
-song = Song.create(name: "God is for Us", artist: "CityAlight", year: 2018, genre: "Modern Christian Worship", tempo: 100, time: "4/4", type: "Upbeat", song_length: 3, video_url: "place holder", sheet_music_url: "place holder")
+song = Song.create(name: "God is for Us", artist: "CityAlight", year: 2018, genre: "Modern Christian Worship", tempo: 100, time: "4/4", dynamics: "Upbeat", song_length: 3, video_url: "place holder", sheet_music_url: "place holder")
