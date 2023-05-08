@@ -5,7 +5,7 @@ class SongsController < ApplicationController
   end
 
   def create
-    @songs = Song.create(
+    @song = Song.create(
       name: params[:name],
       artist: params[:artist],
       year: params[:year],
@@ -40,5 +40,11 @@ class SongsController < ApplicationController
       sheet_music_url: params[:sheet_music_url] || @song.sheet_music_url,
     )
     render :show
+  end
+
+  def destroy
+    @song = Song.find_by(id: params[:id])
+    @song.destroy
+    render json: { message: "Song Destroyed" }
   end
 end
