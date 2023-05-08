@@ -24,4 +24,21 @@ class SongsController < ApplicationController
     @song = Song.find_by(id: params[:id])
     render :show
   end
+
+  def update
+    @song = Song.find_by(id: params[:id])
+    @song.update(
+      name: params[:name] || @song.name,
+      artist: params[:artist] || @song.artist,
+      year: params[:year] || @song.year,
+      genre: params[:genre] || @song.genre,
+      tempo: params[:tempo] || @song.tempo,
+      time: params[:time] || @song.time,
+      dynamics: params[:dynamics] || @song.dynamics,
+      song_length: params[:song_length] || @song.song_length,
+      video_url: params[:video_url] || @song.video_url,
+      sheet_music_url: params[:sheet_music_url] || @song.sheet_music_url,
+    )
+    render :show
+  end
 end
