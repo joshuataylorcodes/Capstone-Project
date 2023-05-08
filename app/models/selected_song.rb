@@ -1,0 +1,2 @@
+class SelectedSong < ApplicationRecord
+end
