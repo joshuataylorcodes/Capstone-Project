@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  artist: MyString
+  genre: MyString
+  tempo: 1
+  type: 
+  song_length: 1
+  video_url: MyString
+  sheet_music_url: MyString
+
+two:
+  name: MyString
+  artist: MyString
+  genre: MyString
+  tempo: 1
+  type: 
+  song_length: 1
+  video_url: MyString
+  sheet_music_url: MyString
