@@ -1,0 +1,13 @@
+json.id song.id
+json.name song.name
+json.artist song.artist
+json.year song.year
+json.genre song.genre
+json.tempo song.tempo
+json.time song.time
+json.dynamics song.dynamics
+json.song_length song.song_length
+json.video_url song.video_url
+json.sheet_music_url song.sheet_music_url
+json.created_at song.created_at
+json.updated_at song.updated_at
