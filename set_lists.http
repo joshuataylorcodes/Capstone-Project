@@ -1,0 +1,7 @@
+POST http://localhost:3000/set_lists.json
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "total_time": 60
+}
