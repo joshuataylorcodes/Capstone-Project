@@ -1,7 +1,7 @@
 class SetListsController < ApplicationController
   def create
     @set_list = Set_list.new(
-      user_id: params[:user_id],
+      user_id: current_user.id,
       total_time: params[:total_time],
     )
     @set_list.save
