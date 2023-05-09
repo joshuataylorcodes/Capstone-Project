@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
 
   #set_list routes
-  post "/set_lists" => "set_list#create"
+  post "/set_lists" => "set_lists#create"
 
-  get "set_lists/:id" => "set_list#show"
+  get "set_lists/:id" => "set_lists#show"
 end

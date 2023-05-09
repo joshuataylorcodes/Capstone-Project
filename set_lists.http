@@ -5,3 +5,14 @@ Content-Type: application/json
   "user_id": 1,
   "total_time": 60
 }
+
+###
+
+GET http://localhost:3000/set_lists/1.json
+Content-Type: application/json
+
+
+###
+
+GET http://localhost:3000/set_lists.json
+Content-Type: application/json
