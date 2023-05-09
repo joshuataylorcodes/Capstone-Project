@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by(email: params[:email])
     if user && user.authenticate(params[:password])
-      jwt = JWT.endcode(
+      jwt = JWT.encode(
         {
           user_id: user.id, #this is the data to encode
           exp: 168.hours.from_now.to_i, #this is how long the jwt will last until it expires
