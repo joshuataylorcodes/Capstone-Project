@@ -11,4 +11,9 @@ Rails.application.routes.draw do
 
   #sessions routes
   post "/sessions" => "sessions#create"
+
+  #set_list routes
+  post "/set_lists" => "set_list#create"
+
+  get "set_lists/:id" => "set_list#show"
 end
