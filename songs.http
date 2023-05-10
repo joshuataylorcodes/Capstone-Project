@@ -1,0 +1,15 @@
+POST http://localhost:3000/songs.json
+Authorization: Bearer Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzNDUwMzJ9.k142o1aq51IBa4M9ooYE9xM8w7UoCaZCqvGlZFuMatw
+Content-Type: application/json
+
+{
+  "name": "God is for Us", 
+  "artist": "CityAlight", 
+  "year": 2018, "genre": "Modern Christian Worship", 
+  "tempo": 100, 
+  "time": "4/4", 
+  "dynamics": "Upbeat", 
+  "song_length": 3, 
+  "video_url": "place holder", 
+  "sheet_music_url": "place holder"
+}

@@ -1,4 +1,4 @@
 class Song < ApplicationRecord
-  has_many :set_lists
   has_many :selected_songs
+  has_many :set_lists, through: :selected_songs
 end

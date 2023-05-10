@@ -16,4 +16,6 @@ Rails.application.routes.draw do
   post "/set_lists" => "set_lists#create"
 
   get "set_lists/:id" => "set_lists#show"
+
+  get "set_lists" => "set_lists#index"
 end
