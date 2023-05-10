@@ -1,5 +1,5 @@
 class SongsController < ApplicationController
-  before_action :authenticate_user
+  before_action :authenticate_admin, except: [:index, :show]
 
   def index
     @songs = Song.all
@@ -7,23 +7,19 @@ class SongsController < ApplicationController
   end
 
   def create
-    if current_user && current_user.admin
-      @song = Song.create(
-        name: params[:name],
-        artist: params[:artist],
-        year: params[:year],
-        genre: params[:genre],
-        tempo: params[:tempo],
-        time: params[:time],
-        dynamics: params[:dynamics],
-        song_length: params[:song_length],
-        video_url: params[:video_url],
-        sheet_music_url: params[:sheet_music_url],
-      )
-      render :show
-    else
-      render json: {}, status: :unauthorized
-    end
+    @song = Song.create(
+      name: params[:name],
+      artist: params[:artist],
+      year: params[:year],
+      genre: params[:genre],
+      tempo: params[:tempo],
+      time: params[:time],
+      dynamics: params[:dynamics],
+      song_length: params[:song_length],
+      video_url: params[:video_url],
+      sheet_music_url: params[:sheet_music_url],
+    )
+    render :show
   end
 
   def show
