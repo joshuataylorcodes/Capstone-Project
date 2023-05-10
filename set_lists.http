@@ -1,16 +1,18 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzNDUwMzJ9.k142o1aq51IBa4M9ooYE9xM8w7UoCaZCqvGlZFuMatw
+
 POST http://localhost:3000/set_lists.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzNDUwMzJ9.k142o1aq51IBa4M9ooYE9xM8w7UoCaZCqvGlZFuMatw
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 ###
 
 GET http://localhost:3000/set_lists/1.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzNDUwMzJ9.k142o1aq51IBa4M9ooYE9xM8w7UoCaZCqvGlZFuMatw
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 
 ###
 
 GET http://localhost:3000/set_lists.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzNDUwMzJ9.k142o1aq51IBa4M9ooYE9xM8w7UoCaZCqvGlZFuMatw
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
