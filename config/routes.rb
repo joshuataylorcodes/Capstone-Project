@@ -12,10 +12,14 @@ Rails.application.routes.draw do
   #sessions routes
   post "/sessions" => "sessions#create"
 
-  #set_list routes
+  #set_lists routes
   post "/set_lists" => "set_lists#create"
 
   get "set_lists/:id" => "set_lists#show"
 
   get "set_lists" => "set_lists#index"
+
+  #selected_songs routes
+
+  post "/selected_songs" => "selected_songs#create"
 end
