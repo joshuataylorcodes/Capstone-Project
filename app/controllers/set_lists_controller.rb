@@ -1,4 +1,6 @@
 class SetListsController < ApplicationController
+  before_action :authenticate_user
+
   def create
     songs = Song.all
     total_time = songs.sum { |hash| hash[:song_length] }
@@ -17,11 +19,7 @@ class SetListsController < ApplicationController
   end
 
   def index
-    if current_user
-      @set_lists = current_user.set_lists
-      render :index
-    else
-      render json: [], status: :unauthorized
-    end
+    @set_lists = current_user.set_lists
+    render :index
   end
 end
