@@ -1,0 +1,11 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzNDUwMzJ9.k142o1aq51IBa4M9ooYE9xM8w7UoCaZCqvGlZFuMatw
+
+POST http://localhost:3000/selected_songs.json
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{
+  "song_id": 1,
+  "status": "selected",
+  "set_list_id": 1
+}
