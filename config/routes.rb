@@ -22,4 +22,6 @@ Rails.application.routes.draw do
   #selected_songs routes
 
   post "/selected_songs" => "selected_songs#create"
+
+  get "/selected_songs" => "selected_songs#index"
 end

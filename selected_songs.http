@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzNDUwMzJ9.k142o1aq51IBa4M9ooYE9xM8w7UoCaZCqvGlZFuMatw
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzNTQyNjJ9.A-gXYmFmvHu5aqwfFVO2pt5wK42hMlpYcSjvURFAgEQ
 
 POST http://localhost:3000/selected_songs.json
 Authorization: Bearer {{jwt}}
@@ -6,6 +6,11 @@ Content-Type: application/json
 
 {
   "song_id": 1,
-  "status": "selected",
   "set_list_id": 1
 }
+
+###
+
+GET http://localhost:3000/selected_songs.json
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
