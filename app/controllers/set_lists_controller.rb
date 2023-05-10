@@ -17,7 +17,11 @@ class SetListsController < ApplicationController
   end
 
   def index
-    @set_lists = current_user.set_lists
-    render :index
+    if current_user
+      @set_lists = current_user.set_lists
+      render :index
+    else
+      render json: [], status: :unauthorized
+    end
   end
 end
