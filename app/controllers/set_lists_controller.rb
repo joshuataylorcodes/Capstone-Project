@@ -2,6 +2,8 @@ class SetListsController < ApplicationController
   before_action :authenticate_admin, except: [:index, :show]
 
   def create
+    selected_songs = current_user.selected_songs.where(status: :carted)
+
     songs = Song.all
     total_time = songs.sum { |hash| hash[:song_length] }
 
