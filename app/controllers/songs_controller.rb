@@ -1,23 +1,29 @@
 class SongsController < ApplicationController
+  before_action :authenticate_user
+
   def index
     @songs = Song.all
     render :index
   end
 
   def create
-    @song = Song.create(
-      name: params[:name],
-      artist: params[:artist],
-      year: params[:year],
-      genre: params[:genre],
-      tempo: params[:tempo],
-      time: params[:time],
-      dynamics: params[:dynamics],
-      song_length: params[:song_length],
-      video_url: params[:video_url],
-      sheet_music_url: params[:sheet_music_url],
-    )
-    render :show
+    if current_user && current_user.admin
+      @song = Song.create(
+        name: params[:name],
+        artist: params[:artist],
+        year: params[:year],
+        genre: params[:genre],
+        tempo: params[:tempo],
+        time: params[:time],
+        dynamics: params[:dynamics],
+        song_length: params[:song_length],
+        video_url: params[:video_url],
+        sheet_music_url: params[:sheet_music_url],
+      )
+      render :show
+    else
+      render json: {}, status: :unauthorized
+    end
   end
 
   def show

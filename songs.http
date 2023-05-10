@@ -1,5 +1,5 @@
 POST http://localhost:3000/songs.json
-Authorization: Bearer Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzNDUwMzJ9.k142o1aq51IBa4M9ooYE9xM8w7UoCaZCqvGlZFuMatw
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODQzNDUwMzJ9.k142o1aq51IBa4M9ooYE9xM8w7UoCaZCqvGlZFuMatw
 Content-Type: application/json
 
 {
