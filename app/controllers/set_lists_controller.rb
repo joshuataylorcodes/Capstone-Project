@@ -22,6 +22,7 @@ class SetListsController < ApplicationController
 
   def index
     @set_lists = current_user.set_lists
+    @selected_songs = current_user.selected_songs.where(status: "selected")
     render :index
   end
 end
