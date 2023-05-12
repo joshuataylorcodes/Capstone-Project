@@ -17,6 +17,7 @@ class SetListsController < ApplicationController
 
   def show
     @set_list = current_user.set_lists.find_by(id: params[:id])
+    @selected_songs = current_user.selected_songs.where(status: "selected")
     render :show
   end
 
