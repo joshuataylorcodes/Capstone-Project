@@ -2,7 +2,7 @@
 
 # Ezy Set List(Backend)
 
-- Ezy Set List is an app that musicians can use to create set lists for shows/performances. Musicians can create a song bank that they can use to select which ever songs they would like to use in a set. Within minutes, a set list can be created that includes the approximate length of performance, all the infromation about each song for each band member, and a pdf document to print out for performances. Less time spent plannning, more time spent practicing.
+- Ezy Set List is an app that musicians can use to create set lists for shows/performances. Musicians can create a song bank that they can use to select which ever songs they would like to use in a set. Within minutes, a set list can be created that includes the approximate length of performance, all the infromation about each song for each band member, and a pdf document to print out for performances. Plan effectivly, Practice efficiently.
 
 Band leaders can sign up for an account, login, and immedialty get started on adding songs to there song bank. Once they are done, they can start choosing songs they would like to add to there song bank. once they have chosen all the songs, they can send out the songs selected via email to all the band members along with a pdf document of the set list. The PDF document will include the song names along with the total time it takes to play though all the songs. This can also be sent to venues so they can know the approximate time of the set. users can also delete songs from the song bank easily and update songs if there are ever some changes.
 
